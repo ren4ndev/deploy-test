@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser);
 
 app.get('/', (req, res) => {
-  res.status(200).json({ messsage: 'Deu certinnn' });
+  res.status(200).send('Deu certinnnnn');
 })
 
 app.listen(PORT, () => console.log(`Escutando na porta ${PORT}`));
