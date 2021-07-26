@@ -1,0 +1,11 @@
+apps:
+  - name: deploy
+    script: ./index.js
+    watch: ./
+    exec_mode: cluster
+    instances: max
+    max_memory_restart: 100M
+    env_prod:
+      MESSAGE: ambiente de producao
+    env_homolog:
+      MESSAGE: ambiente de homologacao

@@ -1,9 +1,8 @@
-require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser').json();
 
 const PORT = process.env.PORT || 3000;
-const MESSAGE = process.env.MESSAGE;
+const MESSAGE = process.env.MESSAGE || 'Hellow world';
 const app = express();
 
 app.use(bodyParser);
